@@ -1,0 +1,15 @@
+.container{
+  display: flex;
+}
+#list, #position{
+  width: 30%;
+  height: 300px;
+}
+#list{
+  display: flex;
+  flex-direction: column;
+}
+#position{
+  display: flex;
+  align-items: center;
+}

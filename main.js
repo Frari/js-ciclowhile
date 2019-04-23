@@ -7,15 +7,18 @@ var listaCognomi = ['Rossi','Bianchi','Aligheri','Manzoni','Marquez'];
 // inserire elemento all'interno di lista
 listaCognomi.push(cognomeUtente);
 
+// ordino cognomi in ordine alfabetico
+listaCognomi.sort();
+
 // assegnazione variabile per posizione all'interno dell'array
 var a = listaCognomi.indexOf(cognomeUtente);
 
-// ciclo while per determinare posizione dell'elemento all'interno dell'array
+// ciclo while per stampa in ordine alfabetico elementy array
 var i = 0;
 while(i<listaCognomi.length){
+  document.getElementById('list').innerHTML += '<p>'+listaCognomi[i]+'</p>';
   i++
 }
 
-// stampa dei cognomi e della posizione
-document.getElementById('list').innerHTML=listaCognomi.sort();
-document.getElementById('position').innerHTML='Il tuo Cognome è nella posizione: ' + a;
+// stampa della posizione
+document.getElementById('position').innerHTML='Il tuo Cognome è nella posizione:' +  a;
